@@ -37,7 +37,10 @@ struct ContentView: View {
                                 ProductItemView(product: product)
                             }
                         }.padding(15)
-
+                        
+                        TitleView(title: "Brands")
+                        
+                        BrandGridView()
                     }
                 } )
                 
