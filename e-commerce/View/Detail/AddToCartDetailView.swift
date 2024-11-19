@@ -9,7 +9,19 @@ import SwiftUI
 
 struct AddToCartDetailView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action:{ }){
+            Spacer()
+            Text("Add to cart".uppercased())
+                .font(.system(.title2,design: .rounded))
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+            Spacer()
+        }
+        .padding(15)
+        .background(Color(red:sampleProduct.red,
+                          green: sampleProduct.green,
+                          blue: sampleProduct.blue))
+        .clipShape(Capsule())
     }
 }
 
